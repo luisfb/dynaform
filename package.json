@@ -1,0 +1,41 @@
+{
+  "name": "dynaform",
+  "version": "1.0.0",
+  "description": "Desafio Frontend.",
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "cat ./build/test/coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "preinstall": "npm i -g http-server && npm i -g karma-cli",
+    "test": "karma start karma.conf.js --single-run --browsers PhantomJS",
+    "tdd": "karma start karma.conf.js --browsers FirefoxDeveloper --reporters progress",
+    "test-crossbrowser": "karma start karma.conf.js --single-run --browsers Chrome,Firefox,IE",
+    "start": "http-server app/ -p 8081 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielPohlmann/dynaform.git"
+  },
+  "author": "Daniel Heler Pohlmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielPohlmann/dynaform/issues"
+  },
+  "homepage": "https://github.com/DanielPohlmann/dynaform#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.12",
+    "jasmine-core": "^2.4.1",
+    "jasmine-jquery": "^2.1.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-fixture": "^0.2.6",
+    "karma-html-reporter": "^0.2.7",
+    "karma-html2js-preprocessor": "^1.0.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jquery": "^0.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "phantomjs-prebuilt": "^2.1.12"
+  }
+}

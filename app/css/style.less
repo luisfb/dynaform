@@ -1,0 +1,165 @@
+@colorFont: #444;
+@backgroundColor:#00A885;
+@borderColor:#61BD6D;
+@whiteColor: #FFFFFF;
+@backgroundOtherColor: #f5f5f5;
+
+.radius(@corner: 0px;){
+	-webkit-border-radius: @corner;
+	-moz-border-radius: @corner;
+	-ms-border-radius: @corner;
+	-o-border-radius: @corner;
+	border-radius: @corner;
+}
+
+html
+{
+    color: @colorFont;
+    font-family: "proxima-nova","Helvetica Neue","Helvetica","sans-serif";
+    position: relative;
+    min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.lead-top
+{
+    margin-top: 1em;
+}
+
+.navbar
+{
+    border-radius: 0;
+}
+
+.df-js {
+    .navbar
+    {
+        margin-bottom: 0;
+    }
+    .navbar-inverse
+    {
+        background-color: @backgroundColor;
+        border: 0;
+        border-bottom: 1px solid @borderColor;
+    }
+    .navbar-inverse 
+    {
+        .navbar-brand {
+            color: @whiteColor;
+            &:hover, &:focus { 
+                color: @whiteColor;
+           	    background-color: transparent;
+            }
+        };
+        .navbar-text
+        {
+            color: @whiteColor;
+        }
+        .navbar-nav {
+            & > li > a {
+                color: @whiteColor;
+                &:hover, &:focus{
+                    color: @whiteColor;
+                    background-color: transparent;
+                }
+            }
+            & > .active > a, & > .active > a:hover, & > .active > a:focus{
+                color: @whiteColor;
+                background-color: @backgroundColor;
+            }
+            & > .disabled > a, & > .disabled > a:hover, & > .disabled > a:focus{
+                color: @whiteColor;
+                background-color: transparent;
+            }           
+        }
+        .navbar-toggle{
+            border-color: @whiteColor;
+            &:hover, &:focus{
+                background-color: transparent;
+            }
+            .icon-bar{
+                background-color: @whiteColor;
+            }
+        }
+        .navbar-link{
+            color: @whiteColor;
+        }
+        .navbar-link:hover{
+            color: @whiteColor;
+        }
+    }
+} 
+
+.df-docs-header
+{
+    background: @backgroundColor;
+    color: @whiteColor;
+    font-size: 24px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: left;
+    margin-bottom: 1em;
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+    a{
+        color: rgba(255,255,255,.75);
+    }
+}
+.df-masthead h1
+{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.df-meta
+{
+    font-size: 14px;
+    .df-meta-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.df-section
+{
+    margin-bottom: 3em;
+}
+
+@media (max-width: 767px) {
+    .df-js {
+        .navbar-collapse{
+            border-top-color: @borderColor;
+        }
+    }
+}
+
+.dynaform{
+    &.no-modal{
+        padding: 10px;
+        border: 1px solid @backgroundOtherColor;
+        .radius(10px);
+    }
+    .footer{
+        background: transparent;
+        height: auto;
+        position: relative;
+        padding: 0;
+    }
+}

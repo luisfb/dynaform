@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>DynaForm - Simple Dynamic Form</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body class="df-js">
+<!---http://htmlpreview.github.io/?https://github.com/DanielPohlmann/dynaform/blob/master/app/index.html-->
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-df-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id=top class="navbar-brand navbar-brand-active" href="./">Dynaform.js</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-df-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#PgExamples">Examples</a></li>
+                    <li><a href="#PgDownload">Download</a></li>
+                    <li><a href="#PgDependencies">Dependencies</a></li>
+                    <li><a href="#PgInstructions">Instructions</a></li>
+                    <li><a href="#PgAbout">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="df-docs-header" tabindex="-1">
+        <div class="container text-center">
+            <div class="df-masthead">
+                <h1>Dynaform.js</h1>
+                <p>
+                    Dynaform form made easy.
+                </p>
+            </div>
+            <div class="df-meta">
+                <ul class="df-meta-list">
+                    <li>
+                        <span>Version 1.0</span>
+                    </li>
+                    <li>&middot;</li>
+                    <li>
+                        <a href="#PgDownload">Download</a>
+                    </li>
+                    <li>&middot;</li>
+                    <li>
+                        <a target="_blank" href="https://github.com/DanielPohlmann/dynaform">Github project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      
+        <section class="df-section">
+            <div class="lead-top">
+                <p class="lead">
+                    <b>Dynaform.js</b> is a small JavaScript library which allows you to create programmatic form boxes using <a target="_blanck" href="https://jquery.com/">jQuery</a>, without having to worry about creating, managing or removing any of the required DOM elements or JS event handlers.
+                </p>
+            </div>
+        </section>    
+
+        <section id="PgExamples" class="df-section">
+            <div class="page-header">
+                <h2>Basic Examples</h2>
+            </div>
+            <div class="alert alert-warning">
+                Documentation for older versions of Bootbox is also available: <a target="_blanck" href="https://github.com/DanielPohlmann/dynaform">v1.x</a>.
+            </div>
+            <p>
+                <b>Please note:</b> the &lsquo;Example&rsquo; object used in the following examples simply displays a notification to help illustrate when each callback is invoked.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <script src="https://gist.github.com/DanielPohlmann/a82cc8c0c5124904dbce70184a92fcd2.js"></script>
+                </div>
+                <div class="col-md-6" id="dynaformFixed"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead">
+                        View Model Example
+                        <a href="javascript:void(0)" id="dynaformModal" data-bb="confirm" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></a>
+                    </p>
+                    <script src="https://gist.github.com/DanielPohlmann/3a9b50bae6d467de604120cb55eca5d4.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <section id="PgDownload" class="df-section">
+            <div class="page-header">
+              <h2>Download <small><a target="_blanck" href="https://github.com/DanielPohlmann/dynaform">Version 1.0</a></small></h2>
+            </div>
+            <p>
+                The latest stable version of Bootbox is <b>1.0</b>. You can download the minified library <a target="_blanck" href="https://github.com/DanielPohlmann/dynaform/dynaform.min.js">dynaform.min.js</a> for use in production, or the uncompressed <a target="_blanck" href="https://github.com/DanielPohlmann/dynaform/dynaform.js">dynaform.js</a> for use in development. I wouldn&rsquo;t recommend hotlinking to either file as Github does not serve the correct mime type which may cause security warnings to be triggered based on your browser&rsquo;s settings.
+            </p>
+
+            <h3>Test via npm using Jasmine</h3>
+
+            <p>A JavaScript Testing Framework</p>
+            <p>Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, Node.js projects, or anywhere that JavaScript can run.</p>
+            
+            <p>Download Dependencies</p>
+            <pre>npm install</pre>
+
+            <p>Test</p>
+            <pre>npm test</pre>
+
+            <p>TDD</p>
+            <pre>npm run tdd</pre>
+
+            <p>Test Crossbrowser</p>
+            <pre>npm run test-crossbrowser</pre>
+
+        </section>
+
+        <section id="PgDependencies" class="df-section">
+            <div class="page-header">
+                <h2>Dependencies</h2>
+            </div>
+            <p>
+                All versions of Dynaform stand on the shoulders of two great giants:
+                <a target="_blanck" href="http://getbootstrap.com">Bootstrap</a> and
+                <a target="_blanck" href="http://jquery.com">jQuery</a>. 
+            </p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Dynaform version</th>                      
+                        <th>Max. Bootstrap</th>
+                        <th>Min. jQuery</th>
+                        <th class="hidden-xs">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>1.x.x <span class="label label-success">Latest</span></td>
+                        <td>3.0.0</td>
+                        <td>1.9.1</td>
+                        <td class="hidden-xs">Current release. Entirely rewritten to support Bootstrap 3.0.0</td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="PgInstructions" class="df-section">
+            <div class="page-header">
+                <h2>Usage Instructions</h2>
+            </div>
+            <p>
+                Once you&rsquo;ve got your <a href="#dependencies">dependencies</a> sorted, usage is fairly straightforward and much like any other JavaScript library you&rsquo;ve ever used. The library creates a single global instance of a <b>Dynaform</b> object:
+            </p>
+            <script src="https://gist.github.com/DanielPohlmann/8ded46a21b2cb931d2a1ffde4b9aa1e4.js"></script>
+        </section>
+
+        <section class="df-section">
+            <div class="page-header">
+                <h2>About</h2>
+            </div>
+            <p>
+               Dynaform was originally created in 2016 with the resolving front-end challenge
+            </p>
+            <p>
+                When you&rsquo;re up and running check out some <a href="#PgExamples">examples</a> or the <a target="_blanck" href="https://github.com/DanielPohlmann/dynaform">documentation</a>.
+            </p>
+        </section>
+
+        <section id="PgAbout" class="df-section">
+            <div class="page-header">
+                <h2>Get involved!</h2>
+            </div>
+            <p>
+                Bootbox is a free, open source project. As such you can help out in a number of ways from simply <a target="_blanck" href="https://github.com/DanielPohlmann/dynaform/issues">raising an issue</a> and <a  target="_blanck"   href="https://github.com/DanielPohlmann/dynaform/pulls">submitting a pull request</a>.
+            </p>
+            <p>
+                Lastly - please just help spread the word!
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; 2016 <a target="_blanck" href="https://br.linkedin.com/in/daniel-heler-pohlmann">Daniel Heler Pohlmann</a>.
+        </div>
+    </footer>
+
+    <!-- JS dependencies -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <!-- bootbox code -->
+    <script src="../src/dynaform.js"></script>
+    
+    <!-- put all demo code in one place type="text/javascript" charset="utf­8"-->    
+    <script> 
+      $(document).ready(function() { 
+       	 
+          options =  { 
+            'token':'62bb61431348e22850828a5829c4373faafe29c1',  
+            'secret':'51a266c2844ccd5cac83d88de88d82d05358aa51', 
+            'modal':false, 
+            'fields':{  
+              'estado':['PR','SC','SP','RS'], 
+              'nível':['Iniciante','Intermediário','Avançado','Ninja'] 
+            } 
+          };
+          
+          $('#dynaformFixed').dynaform(options);
+
+       	  options.modal = true;
+
+          $('#dynaformModal').dynaform(options);
+
+        });
+       
+        //$('#dynaformModal').dynaform(options); }); 
+    </script> 
+
+  </body>
+
+</html>
